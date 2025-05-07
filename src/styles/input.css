@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import url(https://fonts.bunny.net/css?family=instrument-sans:400);
+
+* {
+  font-family: "Instrument Sans", sans-serif;
+}
+
+.input-style {
+  @apply border-b border-[#d9d9d9] outline-none;
+}

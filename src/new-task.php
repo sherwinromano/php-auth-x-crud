@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Task</title>
+    <link href="./styles/output.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/php.png" type="image/x-icon">
+    <?php include "./php/new-task.php" ?>
+</head>
+<body>
+    <main class="min-h-screen flex gap-4 p-[14px]">
+        <section class="bg-[#f5f5f5] basis-[30%] rounded-[14px] border border-[#e5e5e5] flex flex-col justify-between">
+            <?php include "./components/sidebar.php"?>
+        </section>
+        <section class="bg-[#f5f5f5] basis-full rounded-[14px] p-6 border border-[#e5e5e5]">
+            <?php include "./components/new-task.php"?>
+        </section>
+    </main>
+</body>
+</html>
