@@ -1,4 +1,4 @@
-<?php include "php/tasks.php"; ?>
+<?php include "php/tasks.php";?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

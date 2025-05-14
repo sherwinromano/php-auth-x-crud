@@ -1,4 +1,4 @@
-<?php include "./php/register.php"?>
+<?php include "./php/register.php";?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
