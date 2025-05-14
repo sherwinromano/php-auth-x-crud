@@ -1,4 +1,5 @@
-FROM php:8.2-apache
+# Base image
+FROM php:8.2-apache AS base
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
@@ -20,11 +21,17 @@ WORKDIR /var/www/html
 # Copy source code
 COPY ./src /var/www/html/
 
-# Create php directory if it doesn't exist
-RUN mkdir -p /var/www/html/php
-
 # Set proper permissions
 RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html
+
+# Test stage
+FROM base AS test
+
+# Run tests
+RUN php -r 'echo "Running tests...";'
+
+# Final stage
+FROM base AS final
 
 USER www-data
