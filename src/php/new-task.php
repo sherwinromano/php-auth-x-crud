@@ -2,9 +2,9 @@
     include "config.php";
 
     if(!isset($_SESSION['account_id'])) {
-        header('location: login.php');
+        header('location: /login.php');
         exit;
-    }
+    } 
 
     $title = "";
     $description = "";

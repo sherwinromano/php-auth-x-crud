@@ -9,8 +9,8 @@
     <link rel="shortcut icon" href="img/php.png" type="image/x-icon">
 </head>
 <body>
-    <div class="min-h-screen grid place-items-center">
-        <div class="flex flex-col bg-[#f5f5f5] p-8 rounded-[18px] w-[30%] border border-[#e5e5e5]">
+    <div class="flex min-h-screen justify-center items-center">
+        <div class="flex flex-col p-8 rounded-[18px] bg-[#f5f5f5] border border-[#e5e5e5] sm:w-[60%] md:w-[50%] lg:w-[30%]">
             <h1 class="font-bold text-2xl mb-4">Login</h1>
             <form class="flex flex-col gap-2" method="post">
                 <label for="email">Email</label>

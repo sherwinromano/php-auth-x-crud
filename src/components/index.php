@@ -9,7 +9,7 @@
                 $today = date('Y-m-d');
 
                 foreach($tasks as $task) {
-                    if($task['date'] == $today) {
+                    if($task['date'] == $today && $task['completed'] == 'false') {
                         $hasTasksForToday = true;
                         echo "
                         <a href='task.php?id={$task['id']}' class='bg-[hsl(0,0%,90%)] rounded-lg p-4 flex'>
@@ -44,6 +44,20 @@
                             </a>
                           ";
                 }
+            } else {
+                echo "<div class='flex flex-col justify-center items-center w-full'>
+                            <p class='text-gray-500 text-lg'>No tasks scheduled for today</p>
+                          </div>" . 
+                          "
+                            <a href='new-task.php' class='bg-[hsl(0,0%,90%)] rounded-lg p-2 grid place-items-center'>
+                                <div class='flex flex-col items-center gap-4'>
+                                    <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='size-[2.5rem]'>
+                                        <path stroke-linecap='round' stroke-linejoin='round' d='M12 4.5v15m7.5-7.5h-15' />
+                                    </svg>
+                                    <p>Add new task</p>
+                                </div>
+                            </a>
+                          ";
             }
         ?>
     </div>

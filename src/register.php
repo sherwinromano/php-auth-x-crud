@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="min-h-screen grid place-items-center">
-        <div class="flex flex-col bg-[#f5f5f5] p-8 rounded-[18px] w-[40%] border border-[#e5e5e5]">
+        <div class="sm:w-[80%] md:w-[60%] lg:w-[40%] flex flex-col bg-[#f5f5f5] p-8 rounded-[18px] border border-[#e5e5e5]">
             <h1 class="font-bold text-2xl mb-4">Register</h1>
             <form class="flex flex-col gap-2" method="post">
                 <div class="flex gap-4">
